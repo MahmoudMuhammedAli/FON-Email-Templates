@@ -1,13 +1,9 @@
 module.exports = {
-  content: ["./src/**/*.{js,jsx,ts,tsx}"],
+  content: ["./src/**/*.{html,js}"],
   theme: {
     extend: {
       fontFamily: {
-        joy: "'pure joy', 'sans-serif'",
-        cairo: "'Cairo', 'sans-serif'",
         pop: "'Poppins', 'sans-serif'",
-        mon: "'Montserrat', 'sans-serif'",
-        new: "'Take Me One', 'sans-serif'",
       },
       colors: {
         yellow: "#ffbe08",
@@ -24,23 +20,7 @@ module.exports = {
         "4.5xl": "2.7rem",
         "5.5xl": "3.2rem",
       },
-      screens: {
-        "2xs": "389px",
-        "1xs": "450px",
-        "4xl": "2000px",
-      },
-      borderRadius: {
-        "4xl": "2rem",
-        "5xl": "2.5rem",
-      },
     },
   },
-  plugins: [
-    require("tailwindcss-rtl"),
-    require("tailwind-scrollbar"),
-    require("@tailwindcss/forms"),
-  ],
-  variants: {
-    scrollbar: ["rounded"],
-  },
+  plugins: [],
 };
