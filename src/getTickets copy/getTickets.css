@@ -1,0 +1,14 @@
+.container {
+  background-image: url(./background.svg);
+  background-repeat: no-repeat;
+  background-size: contain 100%;
+  background-position: top;
+}
+@media screen and (max-width: 400px) {
+  .container {
+    background-image: url(./backgroundM.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top;
+  }
+}
